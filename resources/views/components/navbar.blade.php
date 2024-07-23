@@ -6,5 +6,11 @@
                 <span>Dashboard</span>
             </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link {{ isset($active) && $active == 'news' ? '' : 'collapsed' }}" href="{{ route('news.index') }}">
+                <i class="bi bi-grid"></i>
+                <span>News</span>
+            </a>
+        </li>
     </ul>
 </aside>

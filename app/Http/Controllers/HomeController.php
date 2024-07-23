@@ -2,15 +2,17 @@
 
 namespace App\Http\Controllers;
 
+// use Illuminate\Http\Request;
+
 class HomeController extends Controller
 {
+    
     public function index()
     {
-        $default = [
+        $default=[
             'title' => 'dashboard',
-            'active' => 'dashboard',
+            'active'=> 'dashboard',
         ];
-
         return view('home', $default);
     }
 }
